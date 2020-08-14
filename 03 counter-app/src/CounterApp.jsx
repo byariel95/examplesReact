@@ -1,0 +1,35 @@
+import React, {useState} from 'react';
+import PropTypes from 'prop-types';
+
+const CounterApp = ({ value }) => {
+
+    const [counter, setCounter] = useState(value);
+
+    const handleAdd = () => setCounter(counter + 1);
+
+    const substractAdd = () => setCounter(counter - 1);
+    
+    const resetvalue = () =>  setCounter( value);
+    
+
+    return (
+        <>
+            <h1>Counter </h1>
+            <p>{ counter }</p> 
+            <button onClick={handleAdd}>+ 1</button>
+            <button onClick={substractAdd}>- 1</button>
+            <button onClick={resetvalue}>reset</button>
+        </>
+    );
+
+
+};
+
+CounterApp.propTypes = {
+
+    value: PropTypes.number,
+
+}
+ 
+
+export default  CounterApp;
