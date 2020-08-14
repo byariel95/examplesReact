@@ -1,9 +1,9 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 //import React, { Fragment } from 'react'
 
 
-const FirstApp = ({ saludo = 'hola mundo' }) => {
+const FirstApp = ({ saludo }) => {
 
 
    
@@ -23,7 +23,12 @@ const FirstApp = ({ saludo = 'hola mundo' }) => {
             <p>Hola Mundo desde un functional component </p>        
         </Fragment>*/    
     );
-
 };
+
+
+FirstApp.propTypes = {
+    saludo: PropTypes.string.isRequired
+}
+
 
 export default FirstApp;
