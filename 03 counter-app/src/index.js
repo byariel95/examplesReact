@@ -6,4 +6,4 @@ import CounterApp from './CounterApp';
 
 const app = document.querySelector('#app');
 //ReactDOM.render(<FirstApp saludo="hola soy goku" />,app);
-ReactDOM.render(<CounterApp value={0}/>,app);
+ReactDOM.render(<CounterApp value={10}/>,app);

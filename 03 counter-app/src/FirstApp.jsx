@@ -14,9 +14,9 @@ const FirstApp = ({ saludo , subtitle = 'this is the subtitle', defaultProp}) =>
 
     return (
         <>
-            <h1> { saludo } </h1>
+            <h1> { saludo }!! </h1>
             {/* <pre>{ JSON.stringify(obj,null,3)}</pre> */}
-            <p>{ subtitle }</p>
+            <h2>{ subtitle }</h2>
             <p>{ defaultProp}</p>
         </>
         /*<Fragment>
